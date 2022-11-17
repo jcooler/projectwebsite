@@ -4,6 +4,10 @@ padding: 0;
 text-align: center;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 .header {
     display: flex;
@@ -86,10 +90,21 @@ margin-bottom: 1rem;
   cursor: pointer; 
 }
 
+.footer{
+    width: auto;
+    background-color: rgb(237, 237, 237);
+    text-align: center;
+    margin-top: 10%;
+    padding: 30px;
+}
 
 .footer-text{
     position: relative;
-  margin-top: 5rem; 
+    display: block;
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    margin: 5px;
+
 }
 
 
