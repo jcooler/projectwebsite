@@ -1,0 +1,128 @@
+body {
+margin: 0;
+padding: 0;
+text-align: center;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2vw;
+    border-bottom: 1px solid grey;
+}
+
+
+
+.sub-header-container {
+    margin-top: 1rem;
+    margin: 0, 2rem;
+}
+
+
+.sub-header {
+    margin: 5rem, 5rem, 5rem, 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid grey;
+}
+
+
+
+
+.button-group-1{
+margin-left: 8rem;
+margin-bottom: 1rem;
+
+
+}
+
+
+.button-group-2{
+    margin-right: 8rem;
+    margin-bottom: 1rem;
+    
+}
+
+ button:hover {
+    background-color: #7a809c;
+  }
+
+ 
+.form-title{
+    margin:1vw;
+}
+.form-section{
+    margin: 5vw 15vw;
+    border: 1px solid;
+    border-radius: 15px;
+}
+
+.form-container{
+    margin: 5vw 15vw;
+    border-radius: 15px;
+}
+
+
+.submit-button{
+    background-color: #112e51;
+  border: 1px solid #112e51; 
+  color: white; 
+  padding: 10px 24px; 
+  cursor: pointer; 
+}
+
+
+.footer {
+    width: 100%;
+    text-align: center;
+    margin-top: 20%;
+    padding: 50px;
+  }
+
+  .footer-info {
+    position: relative;
+    display: inline-block;
+    border-radius: 43px;
+    font-size: 13px;
+    padding: 7px 30px;
+    line-height: 25px;
+    background-color: #333;
+    color: #fff;
+    margin: 5px;
+    
+  }
+
+
+.made-by-text{
+color: #000000;
+position: relative;
+display: block;
+}
+
+
+/* **************************************** Media Queries **************************************** */
+
+@media only screen and (max-width:770px){
+    .btn-outline-secondary { width:auto; display:block; }
+    .btn-outline-secondary { margin-bottom:15px; margin-right:2%; font-size:16px; }
+    .btn-secondary { width:auto; display:block; }
+    .btn-secondary { margin-bottom:15px; margin-right:2%; font-size:16px; }
+}
+
+
+@media only screen and (max-width:350px){
+    .btn-outline-secondary { width:auto; display:block; }
+    .btn-outline-secondary { margin-bottom:15px; margin-right:2%; font-size:16px; }
+    .btn-outline-secondary { margin-bottom:15px; font-size:12px; }
+    .btn-secondary { width:auto; display:block; }
+    .btn-secondary { margin-bottom:15px; margin-right:2%; font-size:16px; }
+    .btn-secondary { margin-bottom:15px; font-size:12px; }
+    .button-group-1 { margin-right: 30%; margin-left: 10%;}
+}

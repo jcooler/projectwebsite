@@ -11,10 +11,10 @@ I attempted to follow accessibility standards I found during the research portio
 
 # styling
 
-I chose to not use a library such as Bootstrap and react intentionally to show my experience with HTML, CSS, and JavaScript as I believe this was the purpose of the project. I also felt it necessary to keep the design to a minimum as this was stated to be a government owned logistics application and in my experience the design has always been kept minimalist and professional. I tried to follow the template provided to show I can take a design and turn it into a reality as opposed to designing and coding what I am comfortable with.
+ I felt it necessary to keep the design to a minimum as this was stated to be a government owned logistics application and in my experience the design has always been kept minimalist and professional. I tried to follow the template provided to show I can take a design and turn it into a reality as opposed to designing and coding what I am comfortable with.
 
 
 # features
-Unfortunately, due to the time constraints I had with my full-time job I was unable to add some of the features I wanted to add. Orginally, I had planned on a working secure login system as the home page as well as a submittable form. Admittedly, PHP and Databases are not my strong suit and I would need more time to research these technologies in order to provide a feasable solution. I did create a home page to allow the home button on the main app to function, as well as make the project more realistic.
+Unfortunately, due to the time constraints I had with my full-time job I was unable to add some of the features I wanted to add. Originally, I had planned on a working secure login system as the home page as well as a submittable form. Admittedly, PHP and Databases are not my strong suit and I would need more time to research these technologies in order to provide a feasible solution. I did create a home page to allow the home button on the main app to function, as well as make the project more realistic.
 
  I did implement a dark mode feature toggle as this has been something I have seen heavily requested in many applications over the recent years as dark mode has been said to be easier on the eyes for some users.
