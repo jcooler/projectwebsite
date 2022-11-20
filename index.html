@@ -20,7 +20,7 @@
 <Div class="header">
     <a href="index.html"> <img src="assets\images\avatar.png" alt="ALMSS Logo"> </a>
 
-<h1 class="title-header"> ALMSS Project </h1>
+<h1 class="title-header"> Sample Project </h1>
 
 <a href="index.html"> <img src="assets\images\avatar.png" alt="ALMSS Logo"> </a>
 
@@ -31,17 +31,17 @@
 
     <div class="button-group-1">
 <!-- Reset Button--->
-<a href="home.html" target="_blank"> <button class="btn btn-secondary" type="button">Home</button></a>
+<a href="index.html"> <button class="btn btn-secondary" type="button">Home</button></a>
 <!-- Reset Button--->
 <button class="btn btn-secondary" type="button" onClick="resetForm()"> Reset </button> 
 </div>
 <div class="button-group-2">
 <!-- Reset Button--->
-<button class="btn btn-outline-secondary" type="button">Button</button> 
+<button class="btn btn-secondary btn-toggle" type="button">Theme</button> 
 <!-- Reset Button--->
-<button class="btn btn-outline-secondary" type="button">Button</button>
+<button class="btn btn-secondary" type="button">button</button>
 <!-- Reset Button--->
-<button class="btn btn-outline-secondary" type="button">Button</button>
+<button class="btn btn-secondary" type="button">button</button>
 </div>
 
 </div>
@@ -56,6 +56,14 @@
 
 <!----------------------------------------- Form Section --------------------------------------------->
 <h2 class="form-title"> Please complete the form below </h2>
+<div id="form-flip">
+  <p id="flip"> Click
+    <a href="#"> here  </a>
+  </p>
+</div>
+<div id="panel">
+
+
 
 <div class="form-section">
 <div class="form-container">
@@ -97,7 +105,7 @@
                           </div>
                           </div>
                           <div class="form-group">
-                                <label for="inputAddress2">Address 2</label>
+                                <label for="inputAddress2"></label>
                                 <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
                               </div>
 
@@ -136,35 +144,26 @@
                   </div>
                 </div>
                 <button class="btn btn-secondary" type="submit">Submit form</button>
+
+                <div id="clock"> 
+  
+                </div>
+
               </form>
               
-              <script>
-              // Example starter JavaScript for disabling form submissions if there are invalid fields
-              (function() {
-                'use strict';
-                window.addEventListener('load', function() {
-                  // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                  var forms = document.getElementsByClassName('needs-validation');
-                  // Loop over them and prevent submission
-                  var validation = Array.prototype.filter.call(forms, function(form) {
-                    form.addEventListener('submit', function(event) {
-                      if (form.checkValidity() === false) {
-                        event.preventDefault();
-                        event.stopPropagation();
-                      }
-                      form.classList.add('was-validated');
-                    }, false);
-                  });
-                }, false);
-              })();
-              </script>
+
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+</head>
+<body>
+ 
+
 
 </div>
 </div>
 <!----------------------------------------- End Form Section --------------------------------------------->
-
-
-
+</div>
 
 
 
@@ -199,7 +198,13 @@
 
 
 <!----------------------------------------- Scripts Section ------------------------------------------->
-<script src="assets\js\clearForm.js"> </script>
+<script src="assets\js\darkTheme.js"></script>
+<script src="assets\js\Slide.js"></script>
+<script src="assets\js\clearForm.js"></script>
+<script src="assets\js\userMessage.js"></script>
+<script src="assets\js\validation.js"></script>
+<script src="lib\moment\moment.min.js"></script>
+
 
 </body>
 </html>

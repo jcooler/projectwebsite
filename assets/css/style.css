@@ -2,7 +2,71 @@ body {
 margin: 0;
 padding: 0;
 text-align: center;
+background: #fff;
+  font: 100% system-ui;
 }
+
+
+@media (prefers-color-scheme: dark) {
+    /* defaults to dark theme */
+    body {
+      --text-color: rgb(136, 136, 136);
+      --bkg-color: #000000;
+    }
+    
+    body.light-theme {
+      --text-color: rgb(0, 0, 0);
+      --bkg-color: #fff;
+    }
+  }
+  
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    background: var(--bkg-color);
+  }
+  
+  h1,
+  p,
+  .form-title,
+  .form-check-label,
+  .form-section,
+  #clock,
+  a {
+    color: var(--text-color);
+  }
+
+
+.invalid-feedback{
+    color:rgb(163, 106, 0) !important;
+}
+
+.form-check-label{
+    color:rgb(163, 106, 0) !important;
+}
+
+
+
+ #panel, #form-flip {
+  padding: 5px;
+  text-align: center;
+
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+
+#flip{
+    margin: auto;
+  width: 20%;
+    align-items: right;
+cursor: pointer;
+}
+
 
 html, body {
     max-width: 100%;
@@ -59,7 +123,7 @@ margin-bottom: 1rem;
     margin:1vw;
 }
 .form-section{
-    margin: 5vw 15vw;
+    margin: 5vw 5vw;
     border: 1px solid;
     border-radius: 15px;
 }
@@ -71,6 +135,7 @@ margin-bottom: 1rem;
 
 
 .submit-button{
+    
     background-color: #112e51;
   border: 1px solid #112e51; 
   color: white; 
@@ -79,11 +144,21 @@ margin-bottom: 1rem;
 }
 
 
+#clock {
+    position: relative;
+    text-align: right;
+    font-size: 14px;
+    margin-top: 15vw;
+    margin-right: 0;
+    padding-right: 0;
+    border: 0;
+}
+
 .footer {
     width: 100%;
     text-align: center;
-    margin-top: 20%;
-    padding: 50px;
+    margin-top: 10%;
+  
   }
 
   .footer-info {
@@ -93,17 +168,15 @@ margin-bottom: 1rem;
     font-size: 13px;
     padding: 7px 30px;
     line-height: 25px;
-    background-color: #333;
-    color: #fff;
     margin: 5px;
     
   }
 
 
 .made-by-text{
-color: #000000;
 position: relative;
 display: block;
+font-size: 14px;
 }
 
 
@@ -111,18 +184,36 @@ display: block;
 
 @media only screen and (max-width:770px){
     .btn-outline-secondary { width:auto; display:block; }
-    .btn-outline-secondary { margin-bottom:15px; margin-right:2%; font-size:16px; }
+    .btn-outline-secondary { margin-bottom:15px; margin-right:2%;}
     .btn-secondary { width:auto; display:block; }
-    .btn-secondary { margin-bottom:15px; margin-right:2%; font-size:16px; }
+    .btn-secondary { margin-bottom:15px; margin-right:2%; font-size: 75% !important; }
 }
 
 
-@media only screen and (max-width:350px){
+@media only screen and (max-width:320px){
     .btn-outline-secondary { width:auto; display:block; }
     .btn-outline-secondary { margin-bottom:15px; margin-right:2%; font-size:16px; }
     .btn-outline-secondary { margin-bottom:15px; font-size:12px; }
     .btn-secondary { width:auto; display:block; }
     .btn-secondary { margin-bottom:15px; margin-right:2%; font-size:16px; }
     .btn-secondary { margin-bottom:15px; font-size:12px; }
-    .button-group-1 { margin-right: 30%; margin-left: 10%;}
+    .button-group-1 { margin-right: 30%; margin-left: 20%;}
+    .title-header {font-size: 3em;}
+}
+
+@media only screen and (max-width: 405px){
+    .btn-outline-secondary { width:auto; display:block; }
+    .btn-outline-secondary { margin-bottom:15px; margin-right:2%; font-size:16px; }
+    .btn-outline-secondary { margin-bottom:15px; font-size:12px; }
+    .btn-secondary { width:auto; display:block; }
+    .btn-secondary { margin-bottom:15px; margin-right:2%; font-size:16px; }
+    .btn-secondary { margin-bottom:15px; font-size:12px; }
+    .button-group-1 { margin-right: 30%; margin-left: 20%;}
+    #clock {font-size: 10px;}
+}
+
+
+@media only screen and (max-width: 300px){
+    p {font-size: 12px;}
+    #clock {font-size: 8px;}
 }
